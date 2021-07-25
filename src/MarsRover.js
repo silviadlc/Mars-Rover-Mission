@@ -30,10 +30,7 @@ function rover(initialPosition, canMoveToPosition) {
         if (command === "F") {
           const newPosition = moveForward(currentPosition);
 
-          /** canMoveToPosition is a mock function.
-           * The function receives next position of the rover to check if it's possible to move to {x, y}.
-           * Returns a boolean: true if the move it's possible, false if it's not.
-           */ if (!canMoveToPosition(newPosition)) {
+          if (!canMoveToPosition(newPosition)) {
             return {
               ...currentPosition,
               error: {
