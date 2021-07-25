@@ -1,8 +1,10 @@
 # Mars-Rover-Mission
 
-The software has been focused on the mobility of the rover, to ensure that it receives the commands correctly and moves forward, as well as that it changes direction towards the indicated side.
+The software has been focused on the mobility of the rover, to ensure that it receives the commands correctly and moves forward. 
 
-In each movement it's checked whether it can move to the next position or there are obstacles that prevents him from doing so. In the latter case, it returns an error message.
+Rover also changes direction towards the indicated side.
+
+Before each move it's checked whether it can move to the next position or there are obstacles that prevents him from doing so. In the second case, it returns an error message.
 
 ## Task
 
